@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Recap</title>
 </head>
 <body>
     <div style="background-color: blue; color: white;">
@@ -14,7 +14,7 @@
 
     <iframe src="https://www.youtube.com/embed/q6EoRBvdVPQ" frameborder="0" width="560" height="315" allowfullscreen></iframe>
 
-    <nav>
+    <nav style="background-color: tomato;">
         <h3>Is there a problem with the embedded video?</h3>
         <p>If so, here are multiple links (to the same video):</p>
         <ul>
@@ -29,5 +29,34 @@
             </li>
         </ul>
     </nav>
+
+    <div style="border: 2px solid black; padding: 1rem;">
+        <h3>Video Quiz</h3>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label>Your Name: <input name="name" /></label>
+                </p>
+                <p>
+                    <label>Email Address: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Email password: <input name="password" type="password" /></label>
+                </p>
+                <p>Is this your real email password? (it better be)
+                    <br />
+                    <p>
+                        <input type="radio" name="answer" id="answer0" value="answer0" />
+                        <label for="answer0">Yes</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="answer" id="answer1" value="answer1" />
+                        <label for="answer1">No</label>
+                    </p>
+                </p>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
